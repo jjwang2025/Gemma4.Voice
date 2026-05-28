@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemma4-voice"
+version = "0.1.0"
+description = "CPU-first speech transcription with Gemma 4 ONNX"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "OpenCode" }
+]
+keywords = ["asr", "gemma4", "onnx", "speech-to-text", "subtitles"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "huggingface-hub>=1.16.4,<2",
+  "numpy>=1.24",
+  "onnxruntime>=1.26.0",
+  "transformers>=5.9.0,<6",
+]
+
+[project.optional-dependencies]
+dev = []
+
+[project.scripts]
+gemma4-voice = "gemma4_voice.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
