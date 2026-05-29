@@ -94,6 +94,11 @@ Architecture and inference flow:
 - English: `docs/architecture-and-inference.en.md`
 - Chinese: `docs/architecture-and-inference.zh-CN.md`
 
+Model footprint and resource breakdown:
+
+- English: `docs/model-footprint-and-resource-breakdown.en.md`
+- Chinese: `docs/model-footprint-and-resource-breakdown.zh-CN.md`
+
 ## Performance Metric
 
 `RTF` is defined as:
