@@ -99,6 +99,11 @@ Model footprint and resource breakdown:
 - English: `docs/model-footprint-and-resource-breakdown.en.md`
 - Chinese: `docs/model-footprint-and-resource-breakdown.zh-CN.md`
 
+Latest Gemma 4 12B research and local feasibility:
+
+- English: `docs/google-gemma-4-12B-it.en.md`
+- Chinese: `docs/google-gemma-4-12B-it.zh-CN.md`
+
 ## Performance Metric
 
 `RTF` is defined as:
@@ -132,3 +137,4 @@ Gemma4.Voice/
 ## License
 
 MIT for the project code. Model weights and model usage remain subject to the upstream model license.
+
